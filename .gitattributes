@@ -1,5 +1,4 @@
-*.cs linguist-detectable=true
-*.c linguist-detectable=true
-*.h linguist-detectable=true
-*.designer.cs linguist-vendored
-*.resx linguist-vendored
+# Treat all C# files as secondary data so C logic stands out
+*.cs linguist-detectable=false
+*.designer.cs linguist-detectable=false
+*.resx linguist-detectable=false
