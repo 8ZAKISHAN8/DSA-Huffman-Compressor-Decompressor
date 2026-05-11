@@ -1,0 +1,12 @@
+﻿  Huffy_Main.cpp
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(157,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(264,44): warning C4267: 'argument': conversion from 'size_t' to 'long', possible loss of data
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(345,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(346,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(350,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(351,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(376,19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(385,24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(405,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\unicorn\source\repos\Huffy\Huffy\Huffy_Main.cpp(413,24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Huffy.vcxproj -> C:\Users\unicorn\source\repos\Huffy\x64\Debug\Huffy.exe
