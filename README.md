@@ -1,4 +1,4 @@
-# 🧠 Cute Huffman File Compressor & Decompressor
+# Huffman File Compressor & Decompressor
 
 ## 📌 Overview
 
