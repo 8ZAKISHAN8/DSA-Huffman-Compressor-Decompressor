@@ -9,12 +9,18 @@ The project combines algorithm implementation with GUI design, asynchronous proc
 
 ---
 
-## Screenshots
+## Demo Video
 
-![Welcome Screen](welcome.png)
+A short demonstration video of the application workflow is included in this repository.
 
-![Compression Screen](compressor.png)
+The demo showcases:
+- Application startup and navigation
+- Compression and decompression modes
+- Drag-and-drop file handling
+- Real-time progress tracking
+- File restoration workflow
 
+huffman project demo video_compressed.mp4
 ---
 
 ## Features
