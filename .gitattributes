@@ -1,5 +1,8 @@
-*.cs linguist-detectable=true
+# Ignore all C# files for language statistics so C can shine
+*.cs linguist-documentation
+*.designer.cs linguist-documentation
+*.resx linguist-documentation
+
+# Ensure C and H files are definitely counted
 *.c linguist-detectable=true
 *.h linguist-detectable=true
-*.designer.cs linguist-vendored
-*.resx linguist-vendored
