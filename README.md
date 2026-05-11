@@ -1,11 +1,18 @@
-# Huffman File Compressor & Decompressor with C (C# WinForms)
+# 🧠 Cute Huffman File Compressor & Decompressor
 
-## Overview
-This project is a graphical desktop application for file compression and decompression using the Huffman Coding algorithm.
+## 📌 Overview
 
-The application was developed using C# Windows Forms and provides an interactive drag-and-drop interface for compressing and restoring files while displaying real-time progress updates.
+Cute Huffman Compressor is a full file compression and decompression system implemented using the **Huffman Coding algorithm**.
 
-The project combines algorithm implementation with GUI design, asynchronous processing, and file handling techniques.
+The project consists of:
+
+- **C Backend** – Implements the Huffman compression/decompression logic.
+- **C# Windows Forms GUI** – User-friendly graphical interface.
+- Real-time progress tracking.
+- Custom themed design.
+- Drag-and-drop functionality.
+
+The system allows users to compress files into a custom format (`.ece2103`) and restore them back to their original state.
 
 ---
 
@@ -24,77 +31,183 @@ The demo showcases:
   
 ---
 
-## Features
+## 🏗 System Architecture
 
-### 📦 Compression & Decompression
-- Huffman-based file compression
-- File decompression and restoration
-- Lossless data recovery
-- Support for processing multiple files
+The project follows a **two-layer architecture**:
 
-### 🖱️ Interactive GUI
-- Drag-and-drop file handling
-- Visual progress tracking
-- Real-time compression percentage updates
-- Dedicated compression and decompression modes
-- Welcome and mode selection screens
+### 🔹 Backend (C – Huffman Engine)
 
-### ⚡ Performance Features
-- Asynchronous task execution using `Task.Run`
-- Configurable buffer size
-- External Huffman engine process integration
-- Progress parsing from process output
+Responsible for:
+- Building the Huffman Tree
+- Generating binary codes
+- File encoding (compression)
+- File decoding (decompression)
+- Writing and reading custom file headers
+- Bit-level data manipulation
+- Buffer-based processing
 
-### 🎨 User Experience
-- Custom themed graphical interface
-- Animated workflow interaction
-- Audio/music controls
-- Dynamic file icons and progress bars
+The backend runs as a separate executable (`Huffy.exe`) and is called by the GUI using command-line arguments.
 
 ---
 
-## Technologies Used
-- C#
+### 🔹 Frontend (C# – Windows Forms GUI)
+
+Features:
+- Welcome screen
+- Mode selection (Compress / Decompress)
+- Drag-and-drop interface
+- Real-time progress bar (0% → 100%)
+- Multi-file support
+- Duplicate file protection
+- Background music toggle
+- Themed user interface
+
+The GUI launches the backend process and reads progress output to update the interface dynamically.
+
+---
+
+## 🧮 Huffman Algorithm Implementation
+
+### ✔ Compression Process
+
+1. Count frequency of each byte (0–255).
+2. Build a priority queue.
+3. Construct the Huffman Tree.
+4. Generate binary codes for each byte.
+5. Encode file data bit-by-bit.
+6. Write custom file header:
+   - Magic number (`HUFF`)
+   - Filename
+   - Padding bits
+   - Frequency table
+7. Generate compressed file with `.ece2103` extension.
+
+---
+
+### ✔ Decompression Process
+
+1. Read and validate file header.
+2. Rebuild Huffman Tree from frequency table.
+3. Decode binary data.
+4. Restore the original file.
+
+---
+
+## ⚡ Performance Features
+
+- Buffer-based file processing.
+- Bit-level manipulation.
+- Real-time progress calculation.
+- ETA estimation during processing.
+- Proper memory management and cleanup.
+
+---
+
+## 🎨 User Interface Features
+
+- Welcome screen with start button.
+- Mode selection screen.
+- Drag-and-drop file area.
+- Custom progress bars.
+- Visual file indicators.
+- Themed design.
+- Background music integration.
+
+---
+
+## 📁 Project Structure
+
+### Frontend (C#)
+
+- WelcomeForm.cs
+- ModeForm.cs
+- DragDropForm.cs
+- Program.cs
+- Resources folder
+
+### Backend (C)
+
+- huffman.c
+- compression.c
+- decompression.c
+- priority_queue.c
+- huffman.h
+- priority_queue.h
+- Huffy.exe
+
+---
+
+## ▶ How To Run
+
+### Requirements
+
+- Windows OS
+- Visual Studio
 - .NET Framework
-- Windows Forms
+- C Compiler (to build backend)
+
+### Steps
+
+1. Compile the C backend to generate `Huffy.exe`.
+2. Place `Huffy.exe` inside the `Resources` folder of the GUI project.
+3. Open the C# solution in Visual Studio.
+4. Build and run the application.
+5. Choose:
+   - Compress
+   - Decompress
+6. Drag files into the interface.
+7. Click **Process**.
+
+---
+
+## 📌 Custom File Format
+Compressed files use the extension:
+.ece2103
+
+The file format includes:
+- Magic header (`HUFF`)
+- Original filename
+- Padding bits
+- Frequency table
+- Encoded binary data
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Data Structures (Priority Queue, Binary Tree)
 - Huffman Coding Algorithm
-- Multithreading / Asynchronous Programming
-- File Handling
-- Process Management
+- Bit-level Programming
+- File I/O in C
+- Cross-language integration (C + C#)
+- Process management
+- Multithreading in C#
+- GUI Development
+- Performance optimization
+- Memory management
 
 ---
 
-## System Workflow
+## 🎓 Project Purpose
 
-1. User launches the application
-2. Compression or decompression mode is selected
-3. Files are dragged into the interface
-4. The Huffman engine processes the files
-5. Progress updates are displayed in real time
-6. Compressed or restored files are generated
+This project was developed as an academic implementation of the Huffman Compression Algorithm, combining:
+
+- Systems programming in C
+- GUI development in C#
+- Real-world file processing
+- Software architecture design
 
 ---
 
-## Technical Concepts Demonstrated
-- Data Compression
-- Huffman Encoding
-- Event-Driven Programming
+## 👨‍💻 Technologies Used
+
+- C
+- C#
+- .NET Windows Forms
+- Huffman Coding Algorithm
+- Priority Queue (Linked List Implementation)
+- Bit Manipulation
 - Process Communication
-- Thread-Safe UI Updates
-- Drag-and-Drop Interfaces
-- Custom UI Components
-- File Stream Processing
-
----
-
-## How to Run
-1. Open the solution file in Visual Studio
-2. Build the project
-3. Run the application
-4. Select compression or decompression mode
-5. Drag files into the interface and process them
 
 
-Author
-
-Karim Mohamed Zaki
+Compressed files use the extension:
