@@ -1,8 +1,9 @@
-# Ignore all C# files for language statistics so C can shine
-*.cs linguist-documentation
-*.designer.cs linguist-documentation
-*.resx linguist-documentation
+# Mark C# UI and Resource files as "Vendored" (Ignore from stats)
+*.designer.cs linguist-vendored
+*.resx linguist-vendored
 
-# Ensure C and H files are definitely counted
+# Ensure your C logic and C# main logic are both counted equally
 *.c linguist-detectable=true
+*.cpp linguist-detectable=true
+*.cs linguist-detectable=true
 *.h linguist-detectable=true
