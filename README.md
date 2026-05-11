@@ -1,4 +1,4 @@
-# Huffman File Compressor & Decompressor (C# WinForms)
+# Huffman File Compressor & Decompressor with C (C# WinForms)
 
 ## Overview
 This project is a graphical desktop application for file compression and decompression using the Huffman Coding algorithm.
@@ -10,9 +10,7 @@ The project combines algorithm implementation with GUI design, asynchronous proc
 ---
 
 ## Screenshots
-(Add screenshots here)
 
-```md
 ![Welcome Screen](welcome.png)
 
 ![Compression Screen](compressor.png)
