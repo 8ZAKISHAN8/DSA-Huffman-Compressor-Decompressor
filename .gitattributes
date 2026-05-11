@@ -1,9 +1,11 @@
-# Mark C# UI and Resource files as "Vendored" (Ignore from stats)
-*.designer.cs linguist-vendored
-*.resx linguist-vendored
+# 1. Hide the "Bulk" (Huge UI files that hide your C logic)
+*.designer.cs linguist-generated
+*.resx linguist-generated
+*.config linguist-generated
+App.config linguist-generated
 
-# Ensure your C logic and C# main logic are both counted equally
+# 2. Force GitHub to show both Logic languages
 *.c linguist-detectable=true
 *.cpp linguist-detectable=true
-*.cs linguist-detectable=true
 *.h linguist-detectable=true
+*.cs linguist-detectable=true
