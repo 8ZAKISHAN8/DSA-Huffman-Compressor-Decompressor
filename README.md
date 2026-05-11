@@ -21,8 +21,7 @@ The demo showcases:
 - Drag-and-drop file handling
 - Real-time progress tracking
 - File restoration workflow
-
-huffman project demo video_compressed.mp4
+  
 ---
 
 ## Features
