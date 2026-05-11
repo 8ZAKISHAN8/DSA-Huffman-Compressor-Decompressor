@@ -13,6 +13,8 @@ The project combines algorithm implementation with GUI design, asynchronous proc
 
 A short demonstration video of the application workflow is included in this repository.
 
+[Watch the Huffman Project Demo Video](huffman%20project%20demo%20video_compressed.mp4)
+
 The demo showcases:
 - Application startup and navigation
 - Compression and decompression modes
