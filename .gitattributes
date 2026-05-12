@@ -1,11 +1,9 @@
-# 1. Tell GitHub to ignore the "Heavy" UI files
-*.Designer.cs linguist-detectable=false
+# Treat all C# files as "Documentation" or "Generated" so they don't count
+*.cs linguist-detectable=false
+*.designer.cs linguist-detectable=false
 *.resx linguist-detectable=false
-*.sln linguist-detectable=false
 
-# 2. Force GitHub to treat .h files as C++ (sometimes it thinks they are C)
+# Force C++ files to be the only ones that count for the language bar
+*.cpp linguist-detectable=true
+*.h linguist-detectable=true
 *.h linguist-language=C++
-
-# 3. Explicitly mark your logic files as the "Heart" of the project
-HuffmanLogic.cs linguist-detectable=true
-main.cpp linguist-detectable=true
