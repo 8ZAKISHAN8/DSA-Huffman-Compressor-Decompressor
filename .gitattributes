@@ -1,10 +1,9 @@
-# Treat all C# files as generated/documentation so they don't count
-*.cs linguist-generated=true
-*.cs linguist-detectable=false
+# Mark all C# files as Vendored/External so they are 0% on the bar
+*.cs linguist-vendored
+*.designer.cs linguist-vendored
+*.resx linguist-vendored
 
-# Force all Header files to be C++
-*.h linguist-language=C++
-*.h linguist-detectable=true
-
-# Make sure your C++ logic is the 100% winner
+# Ensure C++ is the only thing detected
 *.cpp linguist-detectable=true
+*.h linguist-detectable=true
+*.h linguist-language=C++
