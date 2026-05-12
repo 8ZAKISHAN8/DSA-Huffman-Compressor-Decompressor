@@ -1,2 +1,5 @@
 *.cs linguist-vendored
 *.Designer.cs linguist-vendored
+*.resx linguist-vendored
+*.sln linguist-vendored
+*.csproj linguist-vendored
