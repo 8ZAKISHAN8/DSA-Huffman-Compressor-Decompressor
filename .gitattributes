@@ -1,0 +1,7 @@
+# Ignore auto-generated Windows Forms files so they don't count towards the language bar
+*.Designer.cs linguist-detectable=false
+*.resx linguist-detectable=false
+
+# Make sure your C++ files are prioritized
+*.cpp linguist-documentation=false
+*.h linguist-documentation=false
