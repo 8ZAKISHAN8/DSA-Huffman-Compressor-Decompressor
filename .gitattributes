@@ -1,9 +1,2 @@
-# Treat all C# files as "Documentation" or "Generated" so they don't count
-*.cs linguist-detectable=false
-*.designer.cs linguist-detectable=false
-*.resx linguist-detectable=false
-
-# Force C++ files to be the only ones that count for the language bar
-*.cpp linguist-detectable=true
-*.h linguist-detectable=true
-*.h linguist-language=C++
+*.cs linguist-vendored
+*.Designer.cs linguist-vendored
